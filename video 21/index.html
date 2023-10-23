@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .cyellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        [data-x=a]{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cyellow cred cpurple" data-x="a">
+            Text for testing css specificity.
+        </h1>
+    </div>
+</body>
+</html>
