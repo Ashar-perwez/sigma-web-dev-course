@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Specificity</title>
     <style>
+        /* The specificity of this selector is 1 */
         h1{
             color: aqua;
         }
+        /* The specificity of this selector is 10 */
         .cyellow{
             color: yellow;
         }
-        .cred{
+        /* The specificity of this selector is 1+10=11 */
+        h1.cred{
             color: red;
         }
+        /* The specificity of this selector is 10 */
         .cpurple{
             color: purple;
         }
-        [data-x=a]{
-            background-color: aquamarine;
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        /* [data-x=a]{
+            background-color: aquamarine; */
         }
     </style>
 </head>
 <body>
+    <span>Visit this link to know more about specificity : <a href="https://www.codewithharry.com/tutorial/css-specificity/">css-specificity by Harry Bhai</a></span>
     <div>
-        <h1 class="cyellow cred cpurple" data-x="a">
+        <!-- <h1 style="color: maroon;" class="cyellow cred cpurple" data-x="a">
+            Text for testing css specificity.
+        </h1> -->
+        <h1  class="cyellow cred cpurple" data-x="a">
             Text for testing css specificity.
         </h1>
     </div>
