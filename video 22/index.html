@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing unit</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 134px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+            font-size: 2rem;
+
+
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 134px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 70vh;
+            margin: auto;
+            font-size: 18px;
+            background-color: aquamarine;
+
+        }
+        .container div{
+            font-size: 1.5em;
+            width: 60%;
+            border: 2px solid red;
+        }
+        .container div p{
+            font-size: 1.5em;
+            width: 60%;
+            border: 2px solid blue;
+        }
+        .mycont{
+            /* background-color: red; */
+            border: 2px solid black;
+            margin: auto;
+            color: black;
+            font-size:22px;
+            /* width: 100vmin; */
+            width: 70vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+    <div class="container">
+        <div> this is a paragraph containing Lorem ipsum dolor sit amet consectetur adipisicing elit. <p> Here is the inside div </p> Pariatur error esse excepturi quasi repellat! Velit.</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, maiores cupiditate? Numquam blanditiis quaerat minus nam veritatis voluptatum, saepe vitae esse? Delectus distinctio quidem dicta laborum in molestias consequatur voluptatem error repellendus provident animi consectetur et iste odio sequi, ad quia. Aspernatur deserunt sint, placeat harum architecto nemo quod, nihil exercitationem dolore quos voluptates repellat voluptas.
+    </div>
+    <div class="mycont">
+        This is an another container.
+    </div>
+</body>
+</html>
