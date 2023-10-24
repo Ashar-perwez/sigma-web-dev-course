@@ -13,16 +13,25 @@
 
         .box {
             border: 2px solid blue;
-            display: inline;
+            display: inline-block;
+            width: 144px;
+            padding: 45px;
+            margin: 35px;
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+            /* display: flex; */
+            display: inline-flex;
         }
     </style>
 </head>
 
 <body>
-    <div class="box">
+    <div class="box box1">
         I am a box.
     </div>
-    <div>also a nice box</div>
+    <div class="box">also a nice box</div>
     <span>I am a </span>
     <span>boy </span>
 </body>
