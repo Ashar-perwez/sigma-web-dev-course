@@ -9,17 +9,38 @@
         /* .box:first-child {
             background-color: red;
         } */
-        .box::first-line{
+        /* .box::first-line{
             color: green;
+        } */
+        /* .boxes *{
+            /* color: maroon;
+            border: 2px solid black;
+        }
+     p, a, .box,   [data-color="primary"]{
+margin-top: 45px;
+/* padding-top: 45px; */
+        } */ */
+
+        /* .box:nth-child(even){
+            background-color: aqua;
+        } */
+        .boxes::before{
+            content: "Harry is Ashar's good friend.";
+            color: blue;
+        }
+        input::placeholder{
+            color: blue;
+            font-size: large;
         }
     </style>
 </head>
 
 <body>
     <div class="boxes">
-        <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quod explicabo nemo, ab veniam, commodi consequatur a sed esse alias impedit iusto. Qui sint distinctio at ullam illum nesciunt, autem ut libero reiciendis tenetur repellat porro assumenda suscipit, quos a nobis error amet et tempora eaque? Exercitationem impedit incidunt eligendi quisquam, error aperiam sint! Rem minima expedita doloribus obcaecati, provident necessitatibus sit esse alias voluptates, tempora, optio quis autem beatae debitis ipsam? Earum totam quod suscipit quas doloribus facere nemo. Nemo magni recusandae vel modi, eos itaque. Tenetur, saepe sed. Eveniet error ea perspiciatis pariatur assumenda fuga amet accusamus ratione earum recusandae officiis blanditiis, optio magni commodi nostrum et harum adipisci laudantium, nobis similique cupiditate reprehenderit! Cumque autem consectetur illo tenetur doloribus quos amet laborum veniam dolore similique soluta dolores ullam repellat, ipsa eligendi fuga quasi harum odit. Deleniti deserunt maxime mollitia sequi doloremque debitis incidunt accusamus fugit, error saepe optio porro ab, tempore officiis molestias. Et illo, eos, beatae suscipit minus expedita perferendis eum, nemo natus vero molestiae rem aperiam error adipisci accusantium saepe ipsam quam voluptate hic tempore dicta reiciendis nostrum. Dolorem amet repellendus vel aut iure. Similique repudiandae veritatis nesciunt! Fugit adipisci aspernatur eveniet, repudiandae velit beatae nam maxime eius non, fuga iure consectetur quibusdam voluptas et voluptate, sint rerum! Deserunt quam libero reprehenderit temporibus tempore quia distinctio ipsa quasi optio aperiam esse autem tempora, quibusdam numquam dolore possimus ducimus, amet, soluta laboriosam et magni eius. In laborum itaque suscipit tempora molestiae at, deleniti aliquid accusantium repudiandae, expedita maxime esse. Placeat quas accusamus veniam rem minima delectus corrupti aut numquam recusandae. Hic dolorum, excepturi minima incidunt voluptate praesentium ipsum. Vero quisquam tenetur, in fugit commodi quaerat molestiae modi repellat quo ipsam porro dolor eligendi rerum ad, voluptatum facere dignissimos suscipit voluptas, quae impedit corrupti consequatur. Est, aspernatur eligendi impedit ducimus expedita harum nesciunt quas. Molestias illum odio laboriosam. Dolores quos illum amet magnam quisquam est soluta autem id, natus laudantium reprehenderit fuga earum tempora alias deserunt facere itaque nam numquam, debitis ea aut. A nostrum iure sapiente, molestias excepturi quisquam rem dolore dolor laudantium id dolores necessitatibus, soluta ullam sequi ipsam.</div>
+        <div data-color="primary" class="box">I am the first box</div>
         <div class="box">I am a box</div>
         <div class="box">I am a box</div>
+        <input type="text" placeholder="Type your name here">
     </div>
 </body>
 
