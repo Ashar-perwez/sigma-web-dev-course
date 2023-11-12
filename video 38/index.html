@@ -24,6 +24,11 @@
             align-content: start;
             align-content: flex-start;
             /* There is no justify-content in flexbox; */
+            flex-flow: row wrap;
+            /* gap: 30px; */
+            /* row-gap: 60px;
+            column-gap: 70px; */
+            gap: 45px 65px;
         }
         .item{
             height: 52px;
@@ -32,20 +37,44 @@
             margin: 4px;
             background-color: blueviolet;
         }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 4;
+        }
+        .order-3{
+            order: 2;
+        }
+        .order-4{
+            order: 3;
+        }
+        /* default order of an item is 0. */
+        .item-1{
+            flex-grow: 3;
+            /* align-self: flex-end;
+            for this to work , we have to comment out the align items property. */
+        }
+        .item-2{
+            flex-shrink: 4;
+            /* It is the that allow item to shrink if necessary */
+
+           
+        }
     </style>
 </head>
 <body>
     <!-- <h1>CSS flexbox</h1> -->
     <main>
         <div class="container">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
+            <div class="item order-2">1</div>
+            <div class="item order-1">2</div>
+            <div class="item order-4">3</div>
+            <div class="item order-3">4</div>
             <div class="item"></div>
             <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
