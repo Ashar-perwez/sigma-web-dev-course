@@ -6,17 +6,23 @@
     <title>CSS Grid</title>
     <style>
         .container{
+            width: 60vw;
             border: 2px solid rgb(82, 82, 69);
             display: grid;
-            grid-template-columns:[pahla]150px [dusra]100px [t];
-            grid-template-rows: 100px 100px 100px;
+            /* grid-template-columns:[pahla]150px [dusra]100px [t];
+            grid-template-rows: 100px 100px 100px; */
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 23px;
+            row-gap: 35px;
+            column-gap: 53px;
+            justify-items: center;
         }
         .item{
             border: 2px solid red;
             width: 55px;
             height: 55px;
         }
-        .item-4{
+        /* .item-4{
             grid-row: 1/2;
             grid-column: 1/2;
         }
@@ -26,8 +32,9 @@
             grid-row-end: 2; */
             /* grid-column: 1/2; */
             grid-column: pahla/t;
-        }
-
+        } */
+/* justify-items and align-items will be used within cells
+and if container is big and grid is small then align-content and justify-content will be used */
     </style>
 </head>
 <body>
