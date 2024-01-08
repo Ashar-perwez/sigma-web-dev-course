@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: blueviolet;
+            height: 67vh;
+            width: 78vw;
+        }
+        .box{
+            height: 45px;
+            width: 67px;
+            /* animation-name: AsharKaAnimation ;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation-delay: 1s;
+            
+            animation-direction: reverse;
+            animation-play-state: running; */
+            animation: AsharKaAnimation 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 2s 5 alternate-reverse ,
+                      ashar2 7s ease-in-out 3s 1;
+             }
+        @keyframes AsharKaAnimation{
+            from{
+                background-color: blanchedalmond;
+                translate: 2px;
+            }
+            to{
+                background-color: aquamarine;
+                translate: 23vw;
+            }
+        }
+        @keyframes ashar2{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
