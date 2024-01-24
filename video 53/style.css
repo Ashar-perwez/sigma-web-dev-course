@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+
+}
+
+.box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.64;
+    position: absolute;
+    top: 0%;
+    background-color: black;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100%-62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+nav {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 82px;
+    align-items: center;
+    
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav botton {
+    position: relative;
+    z-index: 10;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero:nth-child(2) {
+    font-weight: 400;
+    font: size 24px;
+    text-align: center;
+}
+
+.hero:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(42, 40, 40);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+
+
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+
+
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+    z-index: 10;
+    position: relative;
+
+}
+
+.secImg video {
+    width: 269px;
+    height: 226px;
+    position: absolute;
+    top: -12px;
+    right: 95px;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first > div :nth-child(2){
+    font-size: 24px;
+}
+.second {
+    display: flex;
+    justify-content: center;
+
+
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+section.second > div :nth-child(2){
+    font-size: 24px;
+}
+#v2{
+    width: 331px;
+    height: 246px;
+    position: absolute;
+    top: 36px;
+    right: 67px;
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+.faqbox:hover{
+    background-color: gray;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox{
+    transition: all 2s ease-out;
+    padding: 20px;
+    display: flex; 
+    background-color:#3b3a3a ;
+    max-width: 70vw;
+    margin:18px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+footer .question{
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    
+}
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+button{
+    margin: 34px 0;
+    padding: 8px;
+    background-color: #171616;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
